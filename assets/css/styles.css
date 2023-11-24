@@ -18,6 +18,14 @@ body::before {
   z-index: -1;
 }
 
+.bg-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.6;
+}
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -192,13 +200,8 @@ h6 {
 }
 
 #header.header-top .social-links,
-#header.header-top h2, #header.header-top h4, #header.header-top h5 {
+#header.header-top h2, #header.header-top h4, #header.header-top h5, #header.header-top .bg-video {
   display: none;
-}
-
-#header.header-top span{
-  font-family: 'Dancing Script', cursive;
-  font-weight:400;
 }
 
 #header.header-top h1 {
@@ -637,6 +640,12 @@ margin-bottom: 20px;
     text-align: center;
     padding: 10px;
     background: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 600px) {
+  .credits {
+    visibility: hidden;
   }
 }
 
