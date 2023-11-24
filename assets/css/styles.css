@@ -9,7 +9,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #fff url("../img/bg.jpg") top right no-repeat;
+  /* background: #fff url("../img/wave.svg") top right no-repeat; */
   background-size: cover;
   left: 0;
   right: 0;
@@ -164,6 +164,23 @@ h6 {
   }
 }
 
+@media (max-width: 450px) {
+
+  #header h4 {
+    font-size: 15px;
+    color: #151414ec;
+    padding-bottom: 6px;
+    margin: 18px;
+  }
+  
+  #header h5 {
+    font-size: 14px;
+    color: #151414ec;
+    padding-bottom: 6px;
+  }
+}
+
+
 /* Header Top */
 #header.header-top {
   height: 80px;
@@ -177,6 +194,11 @@ h6 {
 #header.header-top .social-links,
 #header.header-top h2, #header.header-top h4, #header.header-top h5 {
   display: none;
+}
+
+#header.header-top span{
+  font-family: 'Dancing Script', cursive;
+  font-weight:400;
 }
 
 #header.header-top h1 {
@@ -500,6 +522,10 @@ section .container {
   margin: 4px 5px;
 }
 
+.skill-heading{
+  font-weight: 400;
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -511,54 +537,34 @@ section .container {
   color: #040404;
 }
 
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
-  position: relative;
+.img-experience{
+width: 25px;
+margin-right: 10px;
 }
 
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color:  rgb(37, 150, 190);
-  margin-bottom: 10px;
+.resume-content{
+  justify-content: center;
+  margin: 0px 100px;
 }
 
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
+.resume-item{
+  margin-bottom: 40px;
+  border-left: solid rgb(37, 150, 190) 1px;
+  padding-left: 10px;
 }
 
-.resume .resume-item ul {
-  padding-left: 20px;
+@media (max-width: 1000px) {
+  .resume-content{
+    justify-content: center;
+    margin: 0px 40px;
+  }
 }
 
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background:  rgb(37, 150, 190);
-  border: 2px solid  rgb(37, 150, 190);
+@media (max-width: 500px) {
+  .resume-content{
+    justify-content: center;
+    margin: 0px 20px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -623,13 +629,14 @@ margin-bottom: 20px;
   font-size: 13px;
   color: #040404;
   z-index: 999999;
+  background: rgba(255, 255, 255);
 }
 
 @media (max-width: 992px) {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(255, 255, 255);
   }
 }
 
