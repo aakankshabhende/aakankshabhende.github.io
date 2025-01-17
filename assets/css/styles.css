@@ -49,12 +49,10 @@ header#header.header-top::before {
 }
 
 a {
-  color: rgb(37, 150, 190);
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(37, 150, 190);
   text-decoration: none;
 }
 
